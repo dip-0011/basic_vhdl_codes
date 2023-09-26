@@ -1,13 +1,13 @@
 library IEEE;
 use IEEE.std_logic_1164.all;
 
-entity generic_and is
+entity generic_or is
     generic(n:integer)
     port(A: in bit_vector(1 to n);
     Z_out: out std_logic);
-end entity generic_and;
+end entity generic_or;
 
-architecture dataflow of generic_and is
+architecture dataflow of generic_or is
     begin
         process(A)
         variable out_res:bit;
