@@ -2,7 +2,10 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 
 entity generic_or is
-    generic(n:integer) --define the value of n --replace this line with following --generic(n:integer:=16)
+    generic(n:integer) 
+    --define the value of n 
+    --replace this line with following 
+    --generic(n:integer:=16)
     port(A: in bit_vector(1 to n);
     Z_out: out std_logic);
 end entity generic_or;
