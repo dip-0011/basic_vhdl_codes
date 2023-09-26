@@ -14,7 +14,7 @@ architecture dataflow of generic_and is
         begin
             out_res:= '1';
             for k in 1 to n loop
-                out_res := out_res and A(k);
+                out_res := out_res or A(k);
                 exit when out_res := '0';
             end loop;
         Z_out <= out_res;
